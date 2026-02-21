@@ -1,0 +1,29 @@
+# Core dependencies
+openai>=1.0.0              # Whisper API & GPT
+anthropic>=0.18.0          # Claude API
+python-dotenv>=1.0.0       # Environment variables
+
+# Audio processing
+pydub>=0.25.1             # Audio manipulation
+ffmpeg-python>=0.2.0      # Audio conversion
+
+# Document generation
+markdown>=3.5.0           # Markdown processing
+python-docx>=1.0.0        # Word documents
+reportlab>=4.0.0          # PDF generation
+jinja2>=3.1.0             # Template engine
+
+# API integrations
+requests>=2.31.0          # HTTP requests
+xmlrpc>=1.0.0            # Odoo XML-RPC (built-in, but listed for clarity)
+
+# Utilities
+fuzzywuzzy>=0.18.0       # Fuzzy string matching
+python-Levenshtein>=0.21.0  # Fast fuzzy matching
+pytz>=2023.3             # Timezone handling
+python-dateutil>=2.8.2   # Date parsing
+
+# Optional: Local Whisper (uncomment if using)
+# whisper @ git+https://github.com/openai/whisper.git
+# torch>=2.0.0
+# torchaudio>=2.0.0

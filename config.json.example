@@ -1,0 +1,40 @@
+{
+  "transcription": {
+    "provider": "openai-whisper",
+    "model": "whisper-1",
+    "language": "de",
+    "fallback": "whisper-cpp"
+  },
+  "analysis": {
+    "provider": "anthropic",
+    "model": "claude-sonnet-4-5",
+    "max_tokens": 4000
+  },
+  "odoo": {
+    "config_path": "~/.openclaw/workspace/skills/odoo-connector/config.json",
+    "contacts_path": "~/.openclaw/workspace/odoo-contacts.json",
+    "auto_create_tasks": false
+  },
+  "m365": {
+    "calendar_path": "~/.openclaw/secrets/m365-calendar/work.json",
+    "enabled": true
+  },
+  "memory": {
+    "storage_path": "~/.openclaw/workspace/memory/meetings",
+    "index_enabled": true
+  },
+  "protocol": {
+    "default_template": "qps-standard",
+    "formats": ["markdown", "pdf", "docx"],
+    "language": "de"
+  },
+  "review": {
+    "enabled": true,
+    "mode": "telegram",
+    "auto_approve": false
+  },
+  "cost_optimization": {
+    "use_local_whisper_when_duration_exceeds_minutes": 30,
+    "cache_transcriptions": true
+  }
+}
